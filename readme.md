@@ -40,9 +40,9 @@ The shops are clustered into 5 groups.
 Clusters are grouped using the feature engineering.
 
 Cluster summary shows
-** cluster 0 and 4 -- stable local hubs with trans_volatility less
-** cluster 1 -- suspicious because of high trans_volatility
-** cluster 2 and 3 --may be urban hubs with more moving population
+- cluster 0 and 4 -- stable local hubs with trans_volatility less
+- cluster 1 -- suspicious because of high trans_volatility
+- cluster 2 and 3 --may be urban hubs with more moving population
 
 ## Model Evaluation
 - Silhouette Score: 0.38 (reasonable clustering for real-world data)
