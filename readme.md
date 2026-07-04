@@ -14,17 +14,22 @@ From Telangana open data portal download
 ## Features Engineered
 4 Feature Engineering has been done
 1. utilization_ratio -- How many LOCAL families actually came to collect ration?
-    utilization_ratio = (Total transactions - Outside visitors) / Total ration cards
 
-2. portability_rate -- What % of total visitors are from OUTSIDE this shop's area?
-    portability_rate = Outside visitors / Total transactions
+   utilization_ratio = (Total transactions - Outside visitors) / Total ration cards
 
-3. rice_per_card -- On average, how much rice (kg) does each ration card holder get?
-    total_rice = riceafsc + ricefsc + riceaap
-    rice_per_card = Total rice distributed / Total ration cards
+3. portability_rate -- What % of total visitors are from OUTSIDE this shop's area?
 
-4. shop_volatility -- How CONSISTENT is this shop month to month?
-    shop_volatility = Standard deviation of transactions across 29 months
+   portability_rate = Outside visitors / Total transactions
+
+5. rice_per_card -- On average, how much rice (kg) does each ration card holder get?
+
+   total_rice = riceafsc + ricefsc + riceaap
+
+   rice_per_card = Total rice distributed / Total ration cards
+
+7. shop_volatility -- How CONSISTENT is this shop month to month?
+
+   shop_volatility = Standard deviation of transactions across 29 months
 
 ## Dimensionality Reduction (PCA)
 - Reduced 4 features to 2 components
@@ -33,10 +38,14 @@ From Telangana open data portal download
 - Total: 87.27% information retained
 
 ## Clustering Results
-The data is aggregated, scaled using standard scaler. Elbow method is used 
-to find the number of clusters.
+The data is aggregated, scaled using standard scaler. 
+
+Elbow method is used to find the number of clusters.
+
 k-means = 5
+
 The shops are clustered into 5 groups.
+
 Clusters are grouped using the feature engineering.
 
 Cluster summary shows
