@@ -86,3 +86,6 @@ Cluster summary shows
 
 5. 147 anomalous shops detected requiring investigation
    especially in Ranga Reddy and Hyderabad districts
+
+## Live Dashboard
+🌐 [View Live Dashboard](https://telangana-pds-analytics-hi47mwdmchfqwpg7sqytyl.streamlit.app/)
