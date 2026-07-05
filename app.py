@@ -8,9 +8,9 @@ from streamlit_folium import st_folium
 # Load data
 @st.cache_data
 def load_data():
-    base_dir = os.path.dirname(os.path.abspath(__file__))
-    file_path = os.path.join(base_dir, '..', 'outputs', 'shop_profiles_clustered.csv')
-    return pd.read_csv(file_path)
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    csv_path = os.path.join(current_dir, 'shop_profiles_clustered.csv')
+    return pd.read_csv(csv_path)
 
 shop_profiles = load_data()
 
